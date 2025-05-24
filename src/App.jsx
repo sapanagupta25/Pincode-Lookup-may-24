@@ -58,7 +58,7 @@ const App = () => {
       />
       <button onClick={handleLookup}>Lookup</button>
 
-      {loading && <div className="loader">Loading...</div>}
+      {loading && <div className="loader"></div>}
 
       {error && <p className="error">{error}</p>}
       {!loading && data.length > 0 && (
